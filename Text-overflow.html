@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text overflow</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .test-p {
+            border: 2px solid #ddd;
+            width: 200px;
+            white-space: nowrap;
+            padding: 0.5rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">text-overflow</h1>
+        <h2 class="s-heading">Document</h2>
+        <div class="doc">
+            <p class="do">text-overflow:ellipsis</p>
+        </div>
+        <fieldset class="work-area">
+            <legend>Work Area</legend>
+            <p class="test-p" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, sapiente.">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, sapiente.
+            </p>
+        </fieldset>
+    </div>
+</body>
+
+</html>
